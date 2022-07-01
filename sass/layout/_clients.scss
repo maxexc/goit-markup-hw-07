@@ -1,0 +1,41 @@
+.section-clients {
+  padding: 94px 0;
+}
+.clients {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* ---ICONS--- */
+
+.clients-list {
+  display: flex;
+}
+.clients-item:not(:last-child) {
+  margin-right: var(--typical-margin);
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--soc-icon-color);
+  fill: var(--soc-icon-color);
+
+  transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+}
+.client-icon {
+  color: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--highlight-color);
+  fill: var(--highlight-color);
+}

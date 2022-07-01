@@ -461,4 +461,230 @@ h1[class=visually-hidden] {
 .clients-link:focus {
   border: 1px solid var(--highlight-color);
   fill: var(--highlight-color);
+}
+
+/* footer */
+.footer {
+  background: var(--footer-background-color);
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+}
+
+.div-footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts {
+  background: var(--footer-background-color);
+  font-style: normal;
+}
+
+.contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.contact-e {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+}
+
+/* --NEW-- */
+.footer-contacts {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-invite {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--footer-contact-color);
+  fill: var(--footer-contact-color);
+  transition: background-color 250ms var(--timing-function);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--highlight-color);
+}
+
+/* --- MAILING LIST FOOTER --- */
+.mailing-list {
+  margin-left: 93px;
+  margin-top: 12px;
+  display: block;
+}
+
+.mailing-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-contact-color);
+  margin-bottom: 20px;
+}
+
+.mailing {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: var(--footer-contact-color);
+  margin-right: 12px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border-color: var(--highlight-color);
+}
+
+.footer-btn {
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: var(--main-tittle-color);
+  fill: var(--footer-contact-color);
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.footer-icon {
+  margin-left: 10px;
+}
+
+.section-team {
+  background: var(--description-background-color);
+  padding: 94px 0;
+}
+
+.wrap-list {
+  display: flex;
+}
+
+.warp-item {
+  width: 270px;
+  text-align: center;
+  background: var(--main-tittle-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.warp-item:not(:last-child) {
+  margin-right: var(--typical-margin);
+}
+
+.div-warp {
+  padding: 30px 0;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--job-title-color);
+  margin-bottom: 16px;
+}
+
+/* soc-icon */
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-item {
+  margin-left: 10px;
+}
+
+.soc-item:first-child {
+  margin-left: 0;
+}
+
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  color: var(--soc-icon-color);
+  fill: var(--soc-icon-color);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.soc-icon {
+  color: currentColor;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--highlight-color);
+  fill: var(--main-tittle-color);
 }/*# sourceMappingURL=main.css.map */
