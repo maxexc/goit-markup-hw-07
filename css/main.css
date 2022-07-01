@@ -97,6 +97,35 @@ h1[class=visually-hidden] {
   padding-right: 15px;
 }
 
+.main-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  color: var(--main-tittle-color);
+  background: var(--highlight-color);
+  /* выровнять кнопку по центру */
+  margin: 0 auto;
+  display: block;
+  /* выровнять кнопку по центру */
+  min-width: 200px;
+  height: 50px;
+  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.main-btn:hover,
+.main-btn:focus,
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--highlight-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* header */
 .header {
   border-bottom: 1px solid var(--header-bottom);
@@ -221,35 +250,6 @@ h1[class=visually-hidden] {
   margin: 0 auto;
   max-width: 696px;
   margin-bottom: 30px;
-}
-
-.main-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  color: var(--main-tittle-color);
-  background: var(--highlight-color);
-  /* выровнять кнопку по центру */
-  margin: 0 auto;
-  display: block;
-  /* выровнять кнопку по центру */
-  min-width: 200px;
-  height: 50px;
-  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
-}
-
-.main-btn:hover,
-.main-btn:focus,
-.footer-btn:hover,
-.footer-btn:focus {
-  background-color: var(--highlight-btn);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .details {
