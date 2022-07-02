@@ -118,9 +118,7 @@ h1[class=visually-hidden] {
 }
 
 .main-btn:hover,
-.main-btn:focus,
-.footer-btn:hover,
-.footer-btn:focus {
+.main-btn:focus {
   background-color: var(--highlight-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
