@@ -34,7 +34,7 @@
   &:focus {
     border: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
-    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 .client-icon {

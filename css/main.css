@@ -184,6 +184,11 @@ h1[class=visually-hidden] {
   transition: color 250ms var(--timing-function);
 }
 
+.stream {
+  color: var(--highlight-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .stream::after {
   content: "";
   position: absolute;
@@ -214,6 +219,7 @@ h1[class=visually-hidden] {
 .contact:hover,
 .contact:focus {
   color: var(--highlight-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header-item-link:active,
@@ -445,6 +451,7 @@ h1[class=visually-hidden] {
 .clients-link:hover, .clients-link:focus {
   border: 1px solid var(--highlight-color);
   fill: var(--highlight-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .client-icon {
@@ -733,13 +740,13 @@ h1[class=visually-hidden] {
 .icon-box {
   position: absolute;
   opacity: 1;
-  transition: opacity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .icon-check {
   margin-right: 7px;
   opacity: 0;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 /* ---прячем и убираем из потока--- */
@@ -760,9 +767,8 @@ h1[class=visually-hidden] {
 }
 .check-box:checked ~ .icon-check {
   opacity: 1;
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 2px; */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
 }
 
 .privacy {
@@ -829,21 +835,14 @@ ul.portfolio-btn-list li {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .services-item:nth-child(3n) {
   margin-right: 0;
 }
-
 .services-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
 /* Выезжающий текст */
-.services-item:hover .services-item-text,
-.service-link:focus .services-item-text {
-  transform: translateY(0);
-}
-
 .services-item-wrap {
   position: relative;
   overflow: hidden;
@@ -852,6 +851,7 @@ ul.portfolio-btn-list li {
 .services-item-text {
   position: absolute;
   top: 0;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -862,6 +862,9 @@ ul.portfolio-btn-list li {
   /* overflow: auto; */
   transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
+}
+.services-item:hover .services-item-text, .service-link:focus .services-item-text {
+  transform: translateY(0);
 }
 
 /* Scroolbar */
@@ -880,9 +883,7 @@ ul.portfolio-btn-list li {
   flex-direction: column;
   transition: box-shadow 250ms var(--timing-function);
 }
-
-.service-link:hover,
-.service-link:focus {
+.service-link:hover, .service-link:focus {
   box-sizing: border-box;
   background: var(--main-tittle-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
