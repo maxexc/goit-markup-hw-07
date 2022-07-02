@@ -34,54 +34,51 @@
     <!-- header -->
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-logo"
-            ><span class="header-logo-first">Web</span>Studio
+        <nav class="nav">
+          <a href="./index.html" class="logo nav__logo"
+            ><span class="logo__first">Web</span>Studio
           </a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="./index.html" class="header-item-link header-text"
-                >Студия</a
-              >
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студия</a>
             </li>
-            <li class="header-item">
-              <a
-                href="./portfolio.html"
-                class="header-item-link header-text stream"
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link menu__link--stream"
                 >Портфолио</a
               >
             </li>
-            <li class="header-item">
-              <a href="" class="header-item-link header-text">Контакты</a>
+            <li class="menu__item">
+              <a href="" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-header">
-          <li class="contact-item">
+        <ul class="contacts">
+          <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
               title="E-mail"
-              class="header-link header-text envelope"
+              class="contacts__link"
             >
-              <svg class="header-icon" width="16" height="12">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
+          <li class="contacts__item">
             <a
               href="tel:+380961111111"
               title="Mobile phone"
-              class="header-link header-text smartphone"
+              class="contacts__link"
             >
-              <svg class="header-icon" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <div></div>
       </div>
     </header>
     <!-- main -->
@@ -305,14 +302,19 @@
       <div class="container">
         <div>
           <div class="div-footer-logo">
-            <a href="./index.html" class="footer-logo"
-              ><span class="footer-logo-first">Web</span>Studio
+            <a href="./index.html" class="logo footer__logo"
+              ><span class="logo__first">Web</span>Studio
             </a>
           </div>
           <address>
-            <ul class="contacts">
+            <ul class="contacts-footer">
               <li class="footer-item">
-                <a href="" title="address" class="contact"
+                <a
+                  href="https://goo.gl/maps/AGHYp6htn4ZRzc9z8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="address"
+                  class="contact"
                   >г.Киев,пр-т Леси Украинки,26</a
                 >
               </li>

@@ -173,11 +173,11 @@ h1[class=visually-hidden] {
   letter-spacing: 0.02em;
 }
 
-.menu--stream {
+.menu__link--stream {
   color: var(--highlight-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.menu--stream::after {
+.menu__link--stream::after {
   content: "";
   position: absolute;
   bottom: -32.5px;
