@@ -315,7 +315,6 @@ h1[class=visually-hidden] {
   position: relative;
   display: flex;
 }
-
 .team-li:not(:last-child) {
   margin-right: var(--typical-margin);
 }
@@ -354,7 +353,6 @@ h1[class=visually-hidden] {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .warp-item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
@@ -387,7 +385,6 @@ h1[class=visually-hidden] {
 .soc-item {
   margin-left: 10px;
 }
-
 .soc-item:first-child {
   margin-left: 0;
 }
@@ -403,15 +400,13 @@ h1[class=visually-hidden] {
   fill: var(--soc-icon-color);
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
+.soc-link:hover, .soc-link:focus {
+  background-color: var(--highlight-color);
+  fill: var(--main-tittle-color);
+}
 
 .soc-icon {
   color: currentColor;
-}
-
-.soc-link:hover,
-.soc-link:focus {
-  background-color: var(--highlight-color);
-  fill: var(--main-tittle-color);
 }
 
 .section-clients {
@@ -447,15 +442,13 @@ h1[class=visually-hidden] {
   fill: var(--soc-icon-color);
   transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
+.clients-link:hover, .clients-link:focus {
+  border: 1px solid var(--highlight-color);
+  fill: var(--highlight-color);
+}
 
 .client-icon {
   color: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--highlight-color);
-  fill: var(--highlight-color);
 }
 
 /* footer */
@@ -518,7 +511,7 @@ h1[class=visually-hidden] {
 .footer-invite {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
   margin-bottom: 20px;
@@ -540,9 +533,7 @@ h1[class=visually-hidden] {
   fill: var(--footer-contact-color);
   transition: background-color 250ms var(--timing-function);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--highlight-color);
 }
 
@@ -579,9 +570,7 @@ h1[class=visually-hidden] {
   margin-right: 12px;
   transition: border-color 250ms var(--timing-function);
 }
-
-.footer-input:hover,
-.footer-input:focus {
+.footer-input:hover, .footer-input:focus {
   border-color: var(--highlight-color);
 }
 

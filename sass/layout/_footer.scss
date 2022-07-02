@@ -52,7 +52,7 @@
 .footer-invite {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
   margin-bottom: 20px;
@@ -72,10 +72,10 @@
   fill: var(--footer-contact-color);
 
   transition: background-color 250ms var(--timing-function);
-}
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--highlight-color);
+  &:hover,
+  &:focus {
+    background-color: var(--highlight-color);
+  }
 }
 
 /* --- MAILING LIST FOOTER --- */
@@ -109,11 +109,10 @@
   margin-right: 12px;
 
   transition: border-color 250ms var(--timing-function);
-}
-
-.footer-input:hover,
-.footer-input:focus {
-  border-color: var(--highlight-color);
+  &:hover,
+  &:focus {
+    border-color: var(--highlight-color);
+  }
 }
 
 .footer-btn {
