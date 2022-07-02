@@ -26,23 +26,21 @@
   background: var(--footer-background-color);
   font-style: normal;
 }
-.contact {
+@mixin contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--footer-contact-color);
 
   transition: color 250ms var(--timing-function);
 }
+.contact {
+  color: var(--footer-contact-color);
+  @include contact;
+}
 .contact-e {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-
-  transition: color 250ms var(--timing-function);
+  @include contact;
 }
 /* --NEW-- */
 .footer-contacts {
