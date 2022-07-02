@@ -17,11 +17,11 @@
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.contacts {
+.contacts-footer {
   background: var(--footer-background-color);
   font-style: normal;
 }
-@mixin contact {
+@mixin title-font {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -31,11 +31,11 @@
 }
 .contact {
   color: var(--footer-contact-color);
-  @include contact;
+  @include title-font;
 }
 .contact-e {
   color: rgba(255, 255, 255, 0.6);
-  @include contact;
+  @include title-font;
 }
 /* --NEW-- */
 .footer-contacts {
@@ -64,11 +64,11 @@
   color: var(--footer-contact-color);
   fill: var(--footer-contact-color);
 
-  transition: background-color 250ms var(--timing-function);
   &:hover,
   &:focus {
     background-color: var(--highlight-color);
   }
+  transition: background-color 250ms var(--timing-function);
 }
 
 /* --- MAILING LIST FOOTER --- */
@@ -101,11 +101,11 @@
   color: var(--footer-contact-color);
   margin-right: 12px;
 
-  transition: border-color 250ms var(--timing-function);
   &:hover,
   &:focus {
     border-color: var(--highlight-color);
   }
+  transition: border-color 250ms var(--timing-function);
 }
 
 .footer-btn {

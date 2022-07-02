@@ -141,11 +141,6 @@ h1[class=visually-hidden] {
   align-items: center;
 }
 
-.contacts-header {
-  display: flex;
-  margin-left: auto;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -168,11 +163,9 @@ h1[class=visually-hidden] {
   margin-right: 50px;
 }
 
-.header-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 /* ПОДЧЕРКИВАНИЕ */
@@ -183,7 +176,11 @@ h1[class=visually-hidden] {
   /*!!!!!!!!!!!!! ЕСЛИ НЕТ - ТО ФИГУРА
   ПОЗИЦИОНИРУЕТСЯ ОТНОСИТЕЛЬНО ДОКУМЕНТА 
   при position: absolute; !!!!!!!!!!!!!!!*/
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), filter 250ms var(--timing-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .stream {
@@ -202,20 +199,24 @@ h1[class=visually-hidden] {
   background-color: var(--highlight-color);
 }
 
-.contact-item:not(:first-child) {
+.contacts__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.header-link {
-  transition: color 250ms var(--timing-function);
+.contacts__link {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
 
 .menu__link:hover,
 .menu__link:focus,
-.header-link:hover,
-.header-link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .contact-e:hover,
 .contact-e:focus,
 .contact:hover,
@@ -225,7 +226,7 @@ h1[class=visually-hidden] {
 }
 
 .menu__link:active,
-.header-link:active,
+.contacts__link:active,
 .contact-e:active,
 .contact:active {
   color: var(--mark-color);
@@ -448,7 +449,7 @@ h1[class=visually-hidden] {
   border-radius: 4px;
   color: var(--soc-icon-color);
   fill: var(--soc-icon-color);
-  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
 .clients-link:hover, .clients-link:focus {
   border: 1px solid var(--highlight-color);
@@ -482,7 +483,7 @@ h1[class=visually-hidden] {
   margin-bottom: 9px;
 }
 
-.contacts {
+.contacts-footer {
   background: var(--footer-background-color);
   font-style: normal;
 }
