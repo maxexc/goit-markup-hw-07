@@ -288,7 +288,6 @@ h1[class=visually-hidden] {
   width: 270px;
   margin-right: var(--typical-margin);
 }
-
 .description-li:last-child {
   margin-right: 0;
 }

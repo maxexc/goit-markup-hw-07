@@ -34,7 +34,7 @@
 .description-li {
   width: 270px;
   margin-right: var(--typical-margin);
-}
-.description-li:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
