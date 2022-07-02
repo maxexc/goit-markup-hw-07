@@ -6,13 +6,8 @@
 .footer .container {
   display: flex;
 }
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+
+.footer__logo {
   color: var(--footer-contact-color);
 }
 
