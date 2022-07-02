@@ -260,11 +260,29 @@ h1[class=visually-hidden] {
   padding: 94px 0;
 }
 
-.description-list {
+.description {
   display: flex;
 }
 
-.description-pre {
+.description__li {
+  width: 270px;
+  margin-right: var(--typical-margin);
+}
+.description__li:last-child {
+  margin-right: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.title__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,29 +293,11 @@ h1[class=visually-hidden] {
   margin-bottom: 30px;
 }
 
-.description {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-color);
-  margin-bottom: 10px;
-}
-
-.description-text {
+.title__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
-}
-
-.description-li {
-  width: 270px;
-  margin-right: var(--typical-margin);
-}
-.description-li:last-child {
-  margin-right: 0;
 }
 
 .team-works {
