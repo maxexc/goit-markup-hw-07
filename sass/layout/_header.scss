@@ -12,7 +12,7 @@
 }
 
 .header .container,
-.header-nav,
+.nav,
 .header-list {
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   display: flex;
   margin-left: auto;
 }
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,6 +30,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+.nav__logo {
   margin-right: 93px;
 }
 

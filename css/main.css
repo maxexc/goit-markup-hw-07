@@ -135,7 +135,7 @@ h1[class=visually-hidden] {
 }
 
 .header .container,
-.header-nav,
+.nav,
 .header-list {
   display: flex;
   align-items: center;
@@ -146,7 +146,7 @@ h1[class=visually-hidden] {
   margin-left: auto;
 }
 
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -154,6 +154,9 @@ h1[class=visually-hidden] {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.nav__logo {
   margin-right: 93px;
 }
 
@@ -229,8 +232,8 @@ h1[class=visually-hidden] {
   color: var(--mark-color);
 }
 
-/* main */
-.main-box {
+/* main / hero */
+.main {
   background: var(--footer-background-color);
   padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_img.jpg);
@@ -241,7 +244,7 @@ h1[class=visually-hidden] {
   margin: 0 auto;
 }
 
-.main {
+.main__box {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

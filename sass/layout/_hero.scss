@@ -1,6 +1,6 @@
-/* main */
+/* main / hero */
 
-.main-box {
+.main {
   background: var(--footer-background-color);
   padding: 200px 0;
   background-image: linear-gradient(
@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-.main {
+.main__box {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
