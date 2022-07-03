@@ -12,17 +12,7 @@
     margin-right: 0;
   }
 }
-
-.title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-color);
-  margin-bottom: 10px;
-}
-.title__box {
+.details-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +22,17 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.title__text {
+.details-box__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.details-box__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
