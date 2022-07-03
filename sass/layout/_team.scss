@@ -62,13 +62,13 @@
   color: var(--soc-icon-color);
   fill: var(--soc-icon-color);
 
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
   &:hover,
   &:focus {
     background-color: var(--highlight-color);
     fill: var(--main-tittle-color);
   }
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
 }
 .social-networks__icon {
   color: currentColor;
