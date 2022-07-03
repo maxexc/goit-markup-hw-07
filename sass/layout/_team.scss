@@ -3,6 +3,10 @@
   padding: 94px 0;
 }
 
+.team {
+  @include hsecond-title();
+}
+
 .wrap-list {
   display: flex;
 }
