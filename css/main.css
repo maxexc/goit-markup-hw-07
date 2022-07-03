@@ -733,12 +733,12 @@ h1[class=visually-hidden] {
   transition: border-color 250ms var(--timing-function);
 }
 
-.checkbox-center {
+.checkbox {
   display: flex;
   justify-content: center;
 }
 
-.check-label {
+.checkbox__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -750,20 +750,20 @@ h1[class=visually-hidden] {
   position: relative;
 }
 
-.icon-box {
+.checkbox__icon-box {
   position: absolute;
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
 }
 
-.icon-check {
+.checkbox__icon-check {
   margin-right: 7px;
   opacity: 0;
   transition: opacity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 /* ---прячем и убираем из потока--- */
-.check-box {
+.checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -775,18 +775,18 @@ h1[class=visually-hidden] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.check-box:checked + .icon-box {
+.checkbox__input:checked + .checkbox__icon-box {
   opacity: 0;
 }
-.check-box:checked ~ .icon-check {
+.checkbox__input:checked ~ .checkbox__icon-check {
   opacity: 1;
 }
-.check-box:focus ~ .icon-check {
+.checkbox__input:focus + .checkbox__icon-box {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
 }
 
-.privacy {
+.checkbox__policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
