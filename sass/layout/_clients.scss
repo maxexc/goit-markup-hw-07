@@ -1,23 +1,19 @@
-.section-clients {
+.clients-section {
   padding: 94px 0;
 }
-.clients {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+.clients-title {
+  @include hsecond-title();
 }
 
 /* ---ICONS--- */
 
-.clients-list {
+.clients {
   display: flex;
 }
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,15 +24,15 @@
   color: var(--soc-icon-color);
   fill: var(--soc-icon-color);
 
+  transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function), filter 250ms var(--timing-function);
   &:hover,
   &:focus {
     border: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  transition: border 250ms var(--timing-function),
-    fill 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
-.client-icon {
+.client__icon {
   color: currentColor;
 }

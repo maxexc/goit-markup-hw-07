@@ -305,13 +305,11 @@ h1[class=visually-hidden] {
 }
 
 .activity-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -351,13 +349,11 @@ h1[class=visually-hidden] {
 }
 
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -428,28 +424,29 @@ h1[class=visually-hidden] {
   color: currentColor;
 }
 
-.section-clients {
+.clients-section {
   padding: 94px 0;
 }
 
-.clients {
+.clients-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--main-color);
   margin-bottom: 50px;
 }
 
 /* ---ICONS--- */
-.clients-list {
+.clients {
   display: flex;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,13 +458,13 @@ h1[class=visually-hidden] {
   fill: var(--soc-icon-color);
   transition: border 250ms var(--timing-function), fill 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--highlight-color);
   fill: var(--highlight-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.client-icon {
+.client__icon {
   color: currentColor;
 }
 
