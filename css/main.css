@@ -174,12 +174,10 @@ h1[class=visually-hidden] {
 }
 .menu__link:hover, .menu__link:focus {
   color: var(--highlight-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .menu__link--stream {
   color: var(--highlight-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .menu__link--stream::after {
   content: "";
@@ -212,7 +210,6 @@ h1[class=visually-hidden] {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--highlight-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .contacts__icon {
