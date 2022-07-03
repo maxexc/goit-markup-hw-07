@@ -13,6 +13,8 @@
   height: 38px;
   padding: 6px 22px;
 
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
   &:hover,
   &:focus {
     background-color: var(--highlight-color);
@@ -21,8 +23,6 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
