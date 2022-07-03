@@ -18,8 +18,8 @@ a {
 /* убирает рамку при TAB */
 a:focus,
 button:focus,
-.modal-input,
-.modal-text,
-.footer-input {
+.modal-form__input,
+.modal-form__text,
+.mailing__input {
   outline: currentColor;
 }
